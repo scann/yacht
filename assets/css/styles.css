@@ -140,6 +140,22 @@ header {
 .logo-container {
   max-width: 980px;
 }
+.logo:before {
+  content: '';
+  display: block;
+  height: 62px;
+  margin: -53px auto 25px;
+  width: 230px;
+  border-radius: 50%;
+  -moz-box-shadow: 0px 0px 105px 8px #2c4c7c;
+  -webkit-box-shadow: 0px 0px 105px 8px #2c4c7c;
+  box-shadow: 0px 0px 105px 8px #2c4c7c;
+  background: #2c4c7c; /* Old browsers */
+background: -moz-radial-gradient(center, circle cover, #2c4c7c 0%, #1f3962 40%, #182e51 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, circle cover, #2c4c7c 0%,#1f3962 40%,#182e51 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(circle at center, #2c4c7c 0%,#1f3962 40%,#182e51 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4c7c', endColorstr='#182e51',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 .logo {
   margin: 55px auto;
   width: 60%;
