@@ -36,7 +36,32 @@ html {
   line-height: 1em;
 }
 body {
+  color: #ffffff;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  background: rgba(11,27,56,1);
+background: -moz-linear-gradient(top, rgba(11,27,56,1) 0%, rgba(14,32,64,1) 16%, rgba(24,50,94,1) 55%, rgba(24,50,94,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(11,27,56,1)), color-stop(16%, rgba(14,32,64,1)), color-stop(55%, rgba(24,50,94,1)), color-stop(100%, rgba(24,50,94,1)));
+background: -webkit-linear-gradient(top, rgba(11,27,56,1) 0%, rgba(14,32,64,1) 16%, rgba(24,50,94,1) 55%, rgba(24,50,94,1) 100%);
+background: -o-linear-gradient(top, rgba(11,27,56,1) 0%, rgba(14,32,64,1) 16%, rgba(24,50,94,1) 55%, rgba(24,50,94,1) 100%);
+background: -ms-linear-gradient(top, rgba(11,27,56,1) 0%, rgba(14,32,64,1) 16%, rgba(24,50,94,1) 55%, rgba(24,50,94,1) 100%);
+background: linear-gradient(to bottom, rgba(11,27,56,1) 0%, rgba(14,32,64,1) 16%, rgba(24,50,94,1) 55%, rgba(24,50,94,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b1b38', endColorstr='#18325e', GradientType=0 ); 
+}
+.content-wrapper {
+    max-width: 980px;
+    margin: auto;
+}
+footer {
+ background: #2f528e; /* Old browsers */
+background: -moz-linear-gradient(top, #2f528e 0%, #18325e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #2f528e 0%,#18325e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #2f528e 0%,#18325e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f528e', endColorstr='#18325e',GradientType=0 ); /* IE6-9 */
+
+}
+.footer-wrapper {
+  max-width: 980px;
+  margin: auto;
 }
 h1 {
   margin: 0;
@@ -93,7 +118,7 @@ header {
   line-height: 112px;
 }
 /*should be edited for class .active via JS instead of a:hover*/
-.header-menu a:hover{
+.header-menu a:hover {
   background: #572202;
   box-shadow: 0 2px 3px #000;
   -moz-transform: scale(1.2);
