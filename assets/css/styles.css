@@ -92,13 +92,23 @@ header {
   padding: 0 14px;
   line-height: 112px;
 }
+/*should be edited for class .active via JS instead of a:hover*/
 .header-menu a:hover{
   background: #572202;
   box-shadow: 0 2px 3px #000;
-  -webkit-transform: scale(1.2);
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 300ms;
   -moz-transform: scale(1.2);
   -moz-transition-timing-function: ease-out;
   -moz-transition-duration: 300ms;
+  -webkit-transform: scale(1.2);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 300ms;
+  -ms-transform: scale(1.2);
+  -ms-transition-timing-function: ease-out;
+  -ms-transition-duration: 300ms;
+  -o-transform: scale(1.2);
+  -o-transition-timing-function: ease-out;
+  -o-transition-duration: 300ms;
+  transform: scale(1.2);
+  transition-timing-function: ease-out;
+  transition-duration: 300ms;
 }
