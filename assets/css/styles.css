@@ -137,3 +137,19 @@ header {
   transition-timing-function: ease-out;
   transition-duration: 300ms;
 }
+.logo-container {
+  max-width: 980px;
+}
+.logo {
+  margin: 55px auto;
+  width: 60%;
+}
+.logo h1 {
+  font-size: 60px;
+  text-align: center;
+}
+.logo img {
+  display: block;
+  width: 17%;
+  margin: 25px auto;
+}
