@@ -190,6 +190,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4c7c', end
    padding: 0 10px;
  }
  .read-more-btn {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
   color: #ffffff;
   float: right;
   display: inline-block;
@@ -210,3 +212,9 @@ background: -webkit-linear-gradient(top, #511e02 0%,#511e02 13%,#703103 50%,#703
 background: linear-gradient(to bottom, #511e02 0%,#511e02 13%,#703103 50%,#703103 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#511e02', endColorstr='#703103',GradientType=0 ); /* IE6-9 */
  }
+.copyright {
+  padding: 10px 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  color: #7494ca;
+}
