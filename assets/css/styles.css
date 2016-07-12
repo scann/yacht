@@ -168,6 +168,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4c7c', end
 .flickity-prev-next-button.next {
      right: -75px;
  }
-.flickity-page-dots {
-  display: none;
-}
