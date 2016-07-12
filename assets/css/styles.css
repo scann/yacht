@@ -167,5 +167,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4c7c', end
 .logo img {
   display: block;
   width: 17%;
-  margin: 25px auto;
+  margin: 50px auto;
 }
+ .carousel-cell {
+   margin-right: 20px;
+   counter-increment: gallery-cell;
+   border: 10px solid #ffffff;
+   width: 70%;
+ }
+ .flickity-prev-next-button.previous {
+     left: -55px;
+ }
+ .flickity-prev-next-button.next {
+     right: -55px;
+ }
+/*Flickity styles*/
+.carousel-cell {
+  margin-right: 20px;
+  counter-increment: gallery-cell;
+  border: 10px solid #ffffff;
+  width: 70%;
+}
+.flickity-prev-next-button.previous {
+    left: -55px;
+}
+.flickity-prev-next-button.next {
+    right: -55px;
+}
+
