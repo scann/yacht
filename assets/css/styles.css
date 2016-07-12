@@ -139,18 +139,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4c7c', end
 }
 
 /*Flickity styles*/
- .carousel {
-  
- }
  .carousel-cell {
    margin-right: 20px;
    height: 400px;
    border: 10px solid white;
    counter-increment: gallery-cell;
  }
- .flickity-prev-next-button.previous {
-     left: -55px;
+ .flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: #ffffff;
+  box-shadow: 2px 2px 1px 2px black;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button.previous {
+     left: -75px;
  }
- .flickity-prev-next-button.next {
-     right: -55px;
+.flickity-prev-next-button.next {
+     right: -75px;
  }
+.flickity-page-dots {
+  display: none;
+}
