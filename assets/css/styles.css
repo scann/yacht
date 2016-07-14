@@ -41,6 +41,8 @@ h1, h2 {
 /*----header styles----*/
 header {
   background: #000000;
+  z-index: 10;
+  position: relative;
 }
 .header-container {
   max-width: 980px;
@@ -69,6 +71,18 @@ header {
   display:block;
   clear: both;
 }
+.gradient {
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  height: 100px;
+  width: 200px;
+  border-radius: 70%;
+  z-index: 1;
+  -moz-box-shadow: 0px 0px 67px 43px #2c4c7c;
+ -webkit-box-shadow: 0px 0px 67px 43px #2c4c7c;
+ box-shadow: 0px 0px 67px 43px #2c4c7c;
+}
 .header-menu ul {
   margin: 0;
   padding: 0;
@@ -84,6 +98,8 @@ header {
   font-size: 20px;
   padding: 0 14px;
   line-height: 112px;
+  z-index: 10;
+  position: relative;
 }
 /*should be edited for class .active via JS instead of a:hover*/
 .header-menu a:hover {
@@ -108,36 +124,19 @@ header {
 .logo-container {
   max-width: 980px;
 }
-.logo:before {
-  content: '';
-  display: block;
-  height: 62px;
-  margin: -53px auto 25px;
-  width: 230px;
-  border-radius: 50%;
-  -moz-box-shadow: 0px 0px 67px 8px #2c4c7c;
-  -webkit-box-shadow: 0px 0px 67px 8px #2c4c7c;
-  box-shadow: 0px 0px 67px 8px #2c4c7c;
-  background: #2c4c7c; /* Old browsers */
-background: -moz-radial-gradient(center, circle cover, #2c4c7c 0%, #1f3962 40%, #182e51 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, circle cover, #2c4c7c 0%,#1f3962 40%,#182e51 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(circle at center, #2c4c7c 0%,#1f3962 40%,#182e51 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4c7c', endColorstr='#182e51',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
 .logo {
-  margin: 55px auto;
+  margin: 75px auto 30px;
   width: 60%;
 }
 .logo h1 {
-  font-size: 60px;
+  font-size: 55px;
   text-align: center;
 }
 .logo img {
   display: block;
   width: 17%;
-  margin: 50px auto;
+  margin: 30px auto;
 }
-
 /*Flickity styles*/
  .carousel-cell {
    margin-right: 20px;
