@@ -217,3 +217,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#511e02', end
   font-size: 14px;
   color: #7494ca;
 }
+/*Calendar widget styles*/
+.calendar-widget {
+  margin: 30px auto;
+}
+#calendar {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar thead tr:last-child {
+  font-size: small;
+  color: #ffffff;
+}
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+  color: #ffffff;
+}
+#calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar tbody td {
+  color: #ffffff;
+}
+#calendar tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar tbody td.today {
+  background: #7A3604;
+  color: #fff;
+}
