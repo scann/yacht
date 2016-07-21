@@ -66,7 +66,7 @@ header {
   display: inline-block;
   margin-bottom: 5px;
 }
-.header-container:after{
+.header-container:after, .footer-wrapper:after{
   content:"";
   display:block;
   clear: both;
@@ -87,11 +87,11 @@ header {
   margin: 0;
   padding: 0;
 }
-.header-menu li {
+.header-menu li, .footer-menu li {
   list-style: none;
   display: inline-block;
 }
-.header-menu a {
+.header-menu a, {
   display: block;
   color: #ffffff;
   text-decoration: none;
@@ -211,12 +211,35 @@ background: -webkit-linear-gradient(top, #511e02 0%,#511e02 13%,#703103 50%,#703
 background: linear-gradient(to bottom, #511e02 0%,#511e02 13%,#703103 50%,#703103 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#511e02', endColorstr='#703103',GradientType=0 ); /* IE6-9 */
  }
+ .footer-menu {
+  float: right;
+  width: 70%;
+  margin-top: 20px;
+  text-align: right;
+}
+.footer-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 0 10px;
+  border-right: 2px solid #7494ca;
+  color: #7494ca;
+  font-family: 'Fira Sans', sans-serif;
+}
+a.last{
+  border-right: none;
+}
+.footer-menu a:hover {
+  text-decoration: underline;
+}
 .copyright {
+  float: left;
+  width: 30%;
   padding: 10px 0;
   font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
   color: #7494ca;
 }
+
 /*Calendar widget styles*/
 .calendar-widget {
   margin: 30px auto 0;
