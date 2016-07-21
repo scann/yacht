@@ -91,7 +91,7 @@ header {
   list-style: none;
   display: inline-block;
 }
-.header-menu a, {
+.header-menu a {
   display: block;
   color: #ffffff;
   text-decoration: none;
