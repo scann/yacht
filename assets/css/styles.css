@@ -15,9 +15,16 @@ background: -ms-linear-gradient(top, rgba(11,27,56,1) 0%, rgba(14,32,64,1) 16%, 
 background: linear-gradient(to bottom, rgba(11,27,56,1) 0%, rgba(14,32,64,1) 16%, rgba(24,50,94,1) 55%, rgba(24,50,94,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b1b38', endColorstr='#18325e', GradientType=0 ); 
 }
+.main-wrapper {
+  max-width: 100%;
+}
 .content-wrapper {
     max-width: 980px;
     margin: auto;
+}
+.footer-wrapper {
+  max-width: 980px;
+  margin: auto;
 }
 footer {
  background: #2f528e; /* Old browsers */
@@ -25,11 +32,6 @@ background: -moz-linear-gradient(top, #2f528e 0%, #18325e 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #2f528e 0%,#18325e 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #2f528e 0%,#18325e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f528e', endColorstr='#18325e',GradientType=0 ); /* IE6-9 */
-
-}
-.footer-wrapper {
-  max-width: 980px;
-  margin: auto;
 }
 h1 {
   margin: 0;
@@ -74,7 +76,7 @@ header {
 .gradient {
   position: absolute;
   top: 0%;
-  left: 45%;
+  left: 44%;
   height: 100px;
   width: 200px;
   border-radius: 70%;
@@ -270,4 +272,72 @@ a.last{
 #calendar tbody td.today {
   background: #7A3604;
   color: #fff;
+}
+@media only screen and (max-width:1025px) { 
+/* big landscape tablets, laptops, and desktops */ 
+.gradient {
+  left: 40%;
+}
+.flickity-prev-next-button.next {
+    right: -15px;
+  }
+.flickity-prev-next-button.previous {
+    left: -15px;
+  }
+}
+
+@media only screen and (max-width:961px) { 
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+.block-left {
+    width: 68%;
+    margin-left: 2%;
+}
+.block-right {
+    width: 26%;
+    margin-right: 2%;
+  }
+ .content {
+    margin-right: 30px;
+ }
+.sidebar {
+    margin-left: 20px;
+  }
+.flickity-prev-next-button.next {
+    right: 0;
+  }
+.flickity-prev-next-button.previous {
+    left: 0;
+  }
+.copyright {
+    width: 28%;
+    margin-left: 1%;
+  }
+.footer-menu {
+  width: 68%;
+  margin-right: 1%;
+  }
+}
+@media only screen and (max-width:641px) { 
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+.gradient {
+    left: 35%;
+    top: 14%;
+  }
+.logo h1 {
+    font-size: 44px;
+  }
+.flickity-prev-next-button.previous {
+    left: 40px;
+  }
+.flickity-prev-next-button.next {
+    right: 40px;
+  }
+}
+
+@media only screen and (max-width:481px) {
+/* smartphones, Android phones, landscape iPhone */ 
+}
+
+@media only screen and (max-width:320px) { 
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 }
