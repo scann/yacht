@@ -288,6 +288,9 @@ a.last{
 
 @media only screen and (max-width:961px) { 
 /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+.header-menu-btn {
+  display: none;
+}
 .block-left {
     width: 68%;
     margin-left: 2%;
@@ -295,47 +298,134 @@ a.last{
 .block-right {
     width: 26%;
     margin-right: 2%;
-  }
+}
  .content {
     margin-right: 30px;
- }
+}
 .sidebar {
     margin-left: 20px;
-  }
+}
 .flickity-prev-next-button.next {
     right: 0;
-  }
+}
 .flickity-prev-next-button.previous {
     left: 0;
-  }
+}
 .copyright {
     width: 28%;
     margin-left: 1%;
-  }
+}
 .footer-menu {
   width: 68%;
   margin-right: 1%;
-  }
+}
 }
 @media only screen and (max-width:641px) { 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
 .gradient {
     left: 35%;
-    top: 14%;
-  }
+    top: 9%;
+}
 .logo h1 {
     font-size: 44px;
-  }
+}
 .flickity-prev-next-button.previous {
     left: 40px;
-  }
+}
 .flickity-prev-next-button.next {
     right: 40px;
-  }
 }
-
+.block-left {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.block-right {
+    width: 100%;
+    float: none;
+    margin: 0px 17%;
+}   
+.phone-container {
+  float: left;
+  margin: 0 2% 2% 2%;
+} 
+.header-menu a:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+} 
+.logo h1 {
+    font-size: 35px;
+}
+.sidebar {
+  display: none;
+}  
+.content-container {
+    margin: 15px 0;
+}
+.content {
+  margin: 0 2%;
+}
+.box {
+    margin: 50px 0;
+}
+.box.about {
+  margin-bottom: 70px;
+}
+.copyright {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.footer-menu {
+  width: 100%;
+  float: none;
+  text-align: center;
+  margin: 0;
+}
+}
 @media only screen and (max-width:481px) {
 /* smartphones, Android phones, landscape iPhone */ 
+.logo img {
+    width: 20%;
+}
+.flickity-prev-next-button.previous {
+    left: 0px;
+}
+.flickity-prev-next-button.next {
+    right: 0px;
+}
+.block-right {
+    margin: 0px 10%;
+}
+.footer-menu ul {
+    padding-left: 0;
+}
+.footer-menu li {
+    padding-bottom: 15px;
+}
+.header-menu li {
+    display: block;
+}
+.header-menu a {
+  line-height: 40px;
+}
+.gradient {
+  display: none;
+}
+.block-left {
+  display: none;
+}
+.header-menu-btn {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 7%;
+}
 }
 
 @media only screen and (max-width:320px) { 
