@@ -273,6 +273,18 @@ a.last{
   background: #7A3604;
   color: #fff;
 }
+.header-menu-btn {
+  display: none;
+}
+.header-menu .open li {
+  height: 40px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: height .5s, opacity .5s;
+  -moz-transition: height .5s, opacity .5s;  
+  transition: height .5s, opacity .5s;  
+}
+
 @media only screen and (max-width:1025px) { 
 /* big landscape tablets, laptops, and desktops */ 
 .gradient {
@@ -347,7 +359,7 @@ a.last{
 }   
 .phone-container {
   float: left;
-  margin: 0 2% 2% 2%;
+  margin: 2%;
 } 
 .header-menu a:hover {
   -moz-transform: scale(1.05);
@@ -416,8 +428,9 @@ a.last{
 .gradient {
   display: none;
 }
-.block-left {
-  display: none;
+.header-menu li {
+    height: 1px;
+    opacity: 0;
 }
 .header-menu-btn {
   display: block;
@@ -425,6 +438,7 @@ a.last{
   font-size: 25px;
   text-transform: uppercase;
   padding: 7%;
+  cursor: pointer;
 }
 }
 
