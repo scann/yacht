@@ -444,4 +444,35 @@ a.last{
 
 @media only screen and (max-width:320px) { 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+.phone-container:last-child {
+  margin-left: 20%;
+}
+.logo {
+    margin: 30px auto 0;
+    width: 85%;
+}
+.logo img {
+    margin: 20px auto;
+}
+.logo h1 {
+    font-size: 20px;
+}
+.flickity-prev-next-button.previous {
+    left: 5px;
+}
+.flickity-prev-next-button.next {
+    right: 5px;
+}
+h2 {
+    text-align: center;
+}
+.box {
+    margin: 50px 0 50px;
+}
+.read-more-btn {
+  display: block;
+  float: none;
+  text-align: center;
+  margin: 0;
+}
 }
