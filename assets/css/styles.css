@@ -323,14 +323,13 @@ a.last{
   margin-right: 1%;
 }
 }
-
 @media only screen and (max-width:992px) { 
 .header-container {
     max-width: 641px;
 }
 .gradient {
     left: 37%;
-    top: 25%;
+    top: 19%;
 }
 .logo h1 {
     font-size: 44px;
@@ -396,23 +395,18 @@ a.last{
   margin: 0;
 }
 }
-/*
 @media only screen and (max-width:641px) {
 .logo img {
     width: 20%;
+}
+.logo h1 {
+    font-size: 30px;
 }
 .flickity-prev-next-button.previous {
     left: 40px;
 }
 .flickity-prev-next-button.next {
     right: 40px;
-}
-.block-right {
-    margin: 0 3%;
-}
-.phone-container {
-    float: left;
-    margin: 2% 2% 2% 9%;
 }
 .footer-menu ul {
     padding-left: 0;
@@ -442,30 +436,7 @@ a.last{
   cursor: pointer;
 }
 }
-@media only screen and (max-width:640px) and (min-width:585px){
-  .block-right {
-    margin: 0px 15%;
-}
-.phone-container {
-    float: left;
-    margin: 2%;
-}    
-}
-@media only screen and (max-width:584px) and (min-width:482px){
-.block-right {
-    margin: 0 4%;
-}
-.phone-container {
-    margin: 2% 2% 2% 14%;
-}
-.phone-container:last-child {
-  margin-left: 33%;
-}
-}
 @media only screen and (max-width:481px) { 
-.phone-container:last-child {
-  margin-left: 25%;
-}
 .logo {
     margin: 30px auto 0;
     width: 85%;
@@ -483,12 +454,12 @@ a.last{
 .flickity-prev-next-button.next {
     right: 5px;
 }
+.block-right {
+    width: 66%;
+}
 h2 {
     text-align: center;
     font-family: inherit;
-}
-.block-right {
-    margin: 0px 10%;
 }
 .box {
     margin: 50px 0 50px;
@@ -508,11 +479,11 @@ h2 {
   margin-bottom: 30px;
 }
 }
+
 @media only screen and (max-width:320px) { 
-.phone-container:last-child {
-    margin-left: 32%;
-}
 .block-right {
     margin: 0;
+    width: 72%;
+    font-size: 18px;
 }
 }
