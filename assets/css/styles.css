@@ -285,7 +285,7 @@ a.last{
   transition: height .5s, opacity .5s;  
 }
 
-@media only screen and (max-width:1025px) { 
+@media only screen and (max-width:1600px) { 
 /* big landscape tablets, laptops, and desktops */ 
 .gradient {
   left: 40%;
@@ -298,7 +298,7 @@ a.last{
   }
 }
 
-@media only screen and (max-width:961px) { 
+@media only screen and (max-width:1200px) { 
 /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 .header-menu-btn {
   display: none;
@@ -332,8 +332,11 @@ a.last{
   margin-right: 1%;
 }
 }
-@media only screen and (max-width:641px) { 
+@media only screen and (max-width:992px) { 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+.header-container {
+    max-width: 641px;
+}
 .gradient {
     left: 35%;
     top: 9%;
@@ -399,19 +402,23 @@ a.last{
   margin: 0;
 }
 }
-@media only screen and (max-width:481px) {
+@media only screen and (max-width:641px) {
 /* smartphones, Android phones, landscape iPhone */ 
 .logo img {
     width: 20%;
 }
 .flickity-prev-next-button.previous {
-    left: 0px;
+    left: 40px;
 }
 .flickity-prev-next-button.next {
-    right: 0px;
+    right: 40px;
 }
 .block-right {
-    margin: 0px 10%;
+    margin: 0 3%;
+}
+.phone-container {
+    float: left;
+    margin: 2% 2% 2% 9%;
 }
 .footer-menu ul {
     padding-left: 0;
@@ -441,11 +448,30 @@ a.last{
   cursor: pointer;
 }
 }
-
-@media only screen and (max-width:320px) { 
+@media only screen and (max-width:640px) and (min-width:585px){
+  .block-right {
+    margin: 0px 15%;
+}
+.phone-container {
+    float: left;
+    margin: 2%;
+}    
+}
+@media only screen and (max-width:584px) and (min-width:482px){
+.block-right {
+    margin: 0 4%;
+}
+.phone-container {
+    margin: 2% 2% 2% 14%;
+}
+.phone-container:last-child {
+  margin-left: 33%;
+}
+}
+@media only screen and (max-width:481px) { 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 .phone-container:last-child {
-  margin-left: 20%;
+  margin-left: 25%;
 }
 .logo {
     margin: 30px auto 0;
@@ -468,6 +494,9 @@ h2 {
     text-align: center;
     font-family: inherit;
 }
+.block-right {
+    margin: 0px 10%;
+}
 .box {
     margin: 50px 0 50px;
 }
@@ -484,5 +513,13 @@ h2 {
 .box-text {
   line-height: 1.2;
   margin-bottom: 30px;
+}
+}
+@media only screen and (max-width:320px) { 
+.phone-container:last-child {
+    margin-left: 32%;
+}
+.block-right {
+    margin: 0;
 }
 }
