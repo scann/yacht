@@ -455,8 +455,14 @@ a.last{
     right: 5px;
 }
 .block-right {
-    width: 66%;
+    width: 100%;
 }
+.block-right li {
+  float: none;
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.4;
+}  
 h2 {
     text-align: center;
     font-family: inherit;
@@ -479,11 +485,8 @@ h2 {
   margin-bottom: 30px;
 }
 }
-
 @media only screen and (max-width:320px) { 
-.block-right {
-    margin: 0;
-    width: 72%;
+.block-right li{   
     font-size: 18px;
 }
 }
