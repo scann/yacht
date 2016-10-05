@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
-	<title>Истории</title>
+	<title>О нас</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic-ext" rel="stylesheet">
  	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&subset=cyrillic-ext" rel="stylesheet">
  	<link href="https://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic" rel="stylesheet">
@@ -21,12 +21,13 @@
     <![endif]-->
 </head>
 <body>
+	<div class="main-wrapper">
 	<header>
 		<div class="header-container">
-
+			<div class="header-menu-btn" id="menuBtn"><span class="menu-toggle"></span>Меню</div>
 			<div class="block-left">
 				<nav class="header-menu">
-					<ul>
+					<ul id="menu">
 						<li><a href="index.html" class="active">Главная</a></li>
 						<li><a href="prices.html">Цены</a></li>
 						<li><a href="routes.html">Маршруты</a></li>
@@ -38,11 +39,12 @@
 				</nav>
 			</div>	
 			<div class="block-right">
-				<img src="assets/img/icon-phone.png" alt="phone icon"/><div class="phone">+38(066)123-45-67</div><br>
-				<img src="assets/img/icon-phone.png" alt="phone icon"/><div class="phone">+38(066)123-45-67</div><br>
-				<img src="assets/img/icon-phone.png" alt="phone icon"/><div class="phone">+38(066)123-45-67</div>
-			</div>
-
+				<ul>
+					<li>+38(066)123-45-67</li>
+					<li>+38(066)123-45-67</li>
+					<li>+38(066)123-45-67</li>
+				</ul>
+			</div></div>
 		</div>			
 	</header>
 	<div class="gradient"></div>
@@ -53,6 +55,7 @@
 				<img src="assets/img/logo.png" alt="Логотип яхты"/>
 			</div>
 		</section>
+		
 	<section class="content-container">
 		
 	</section>
@@ -76,5 +79,10 @@
 			</nav>
 		</div>	
 	</footer>
+</div>	
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/calendar.js"></script>
+<script src="https://npmcdn.com/flickity@2.0.2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
