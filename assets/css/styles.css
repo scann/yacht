@@ -338,7 +338,7 @@ a.last{
 }
 .gradient {
     left: 37%;
-    top: 19%;
+    top: 16%;
 }
 .logo h1 {
     font-size: 44px;
@@ -427,13 +427,13 @@ a.last{
     display: block;
 }
 .header-menu a {
-  line-height: 40px;
+  line-height: 0;
 }
 .gradient {
   display: none;
 }
 .header-menu li {
-    height: 1px;
+    height: 0;
     opacity: 0;
 }
 .header-menu-btn {
