@@ -315,8 +315,9 @@ a.last{
   width: auto\9; /* ie8 */
   display: block;
   float: left;
-  margin-right: 2%;
+  margin-right: 4%;
   border-radius: 50px;
+  shape-outside: inset(1% round 45%);
 }
 /*Stories page*/
 .illustration-left {
@@ -325,8 +326,9 @@ a.last{
   max-width: 100%;
   height: auto;
   width: auto\9; /* ie8 */
-  margin: 2% 2% 2% 0;
+  margin: 2% 4% 2% 0;
   border-radius: 50px;
+  shape-outside: inset(1% round 45%);
 }
 @media only screen and (max-width:1600px) { 
 .header-menu-btn {
