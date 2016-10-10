@@ -330,6 +330,20 @@ a.last{
   border-radius: 50px;
   shape-outside: inset(1% round 45%);
 }
+/*Gallery page*/
+.gallery-header {
+  text-align: center;
+}
+.gallery-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.gallery-item{
+  border: 2px solid white;
+  display: inline-block;
+  margin-right: 1%;
+  margin-top: 1%;
+}
 @media only screen and (max-width:1600px) { 
 .header-menu-btn {
   display: none;
