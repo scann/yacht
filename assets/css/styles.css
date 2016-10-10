@@ -318,6 +318,16 @@ a.last{
   margin-right: 2%;
   border-radius: 50px;
 }
+/*Stories page*/
+.illustration-left {
+  display: block;
+  float: left;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  margin: 2% 2% 2% 0;
+  border-radius: 50px;
+}
 @media only screen and (max-width:1600px) { 
 .header-menu-btn {
   display: none;
@@ -524,6 +534,10 @@ h2 {
 .bio-photo {
   float: none;
   margin: auto;
+}
+.illustration-left {
+  float: none;
+  margin: 4% auto;
 }
 }
 @media only screen and (max-width:320px) { 
