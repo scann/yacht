@@ -292,21 +292,24 @@ a.last{
   border-radius: 2px;
 }  
 
-/*Prices page*/
+/*Prices page, Routes page*/
 .big-line-height {
   line-height: 1.4;
 }
 .box-text {
   text-indent: 30px;
 }
-.table-prices {
+.table-prices, .table-routes {
   width: 100%;
 }
 
-.table-prices th, .table-prices td {
+.table-prices th, .table-prices td,
+.table-routes th, .table-routes td {
   border: 1px solid #fff;
   text-align: center;
 }
+
+
 @media only screen and (max-width:1600px) { 
 .header-menu-btn {
   display: none;
