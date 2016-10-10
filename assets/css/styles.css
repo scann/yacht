@@ -308,8 +308,13 @@ a.last{
   border: 1px solid #fff;
   text-align: center;
 }
-
-
+/*About page*/
+.bio-photo {
+  display: block;
+  float: left;
+  margin-right: 2%;
+  border-radius: 50px;
+}
 @media only screen and (max-width:1600px) { 
 .header-menu-btn {
   display: none;
