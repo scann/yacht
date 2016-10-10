@@ -310,6 +310,9 @@ a.last{
 }
 /*About page*/
 .bio-photo {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
   display: block;
   float: left;
   margin-right: 2%;
@@ -517,6 +520,10 @@ h2 {
 .box-text {
   line-height: 1.2;
   margin-bottom: 30px;
+}
+.bio-photo {
+  float: none;
+  margin: auto;
 }
 }
 @media only screen and (max-width:320px) { 
