@@ -103,21 +103,45 @@ header {
 .header-menu a:hover {
   background: #572202;
   box-shadow: 0 2px 3px #000;
-  -moz-transform: scale(1.2);
+  -moz-transform: scale(1.1);
   -moz-transition-timing-function: ease-out;
   -moz-transition-duration: 300ms;
-  -webkit-transform: scale(1.2);
+  -webkit-transform: scale(1.1);
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 300ms;
-  -ms-transform: scale(1.2);
+  -ms-transform: scale(1.1);
   -ms-transition-timing-function: ease-out;
   -ms-transition-duration: 300ms;
-  -o-transform: scale(1.2);
+  -o-transform: scale(1.1);
   -o-transition-timing-function: ease-out;
   -o-transition-duration: 300ms;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition-timing-function: ease-out;
   transition-duration: 300ms;
+  z-index: 3;
+}
+.header-menu a.active {
+  background: #79360D;  
+  box-shadow: 0 2px 3px #000;
+  -moz-transform: scale(1.1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 300ms;
+  -webkit-transform: scale(1.1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 300ms;
+  -ms-transform: scale(1.1);
+  -ms-transition-timing-function: ease-out;
+  -ms-transition-duration: 300ms;
+  -o-transform: scale(1.1);
+  -o-transition-timing-function: ease-out;
+  -o-transition-duration: 300ms;
+  transform: scale(1.1);
+  transition-timing-function: ease-out;
+  transition-duration: 300ms;
+  z-index: 1;
+}
+.header-menu a:active {
+  background: #3A1600;
 }
 .logo-container {
   max-width: 980px;
