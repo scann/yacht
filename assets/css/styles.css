@@ -233,7 +233,15 @@ background: -webkit-linear-gradient(top, #511e02 0%,#511e02 13%,#703103 50%,#703
 background: linear-gradient(to bottom, #511e02 0%,#511e02 13%,#703103 50%,#703103 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#511e02', endColorstr='#703103',GradientType=0 ); /* IE6-9 */
  }
- .footer-menu {
+.read-more-btn:active {
+    background: #511e02; /* Old browsers */
+    background: -moz-linear-gradient(top, #511e02 0%, #511e02 13%, #703103 50%, #703103 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #511e02 0%,#511e02 13%,#703103 50%,#703103 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #511e02 0%,#511e02 13%,#703103 50%,#703103 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#511e02', endColorstr='#703103',GradientType=0 ); /* IE6-9 */
+    box-shadow: inset 1px 1px 1px 1px #14294d;
+}
+.footer-menu {
   float: right;
   width: 70%;
   margin-top: 20px;
@@ -250,8 +258,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#511e02', end
 a.last{
   border-right: none;
 }
-.footer-menu a:hover {
+.footer-menu a:hover,
+.footer-menu a:active,
+.footer-menu a.active {
   text-decoration: underline;
+}
+.footer-menu a.active,
+.footer-menu a:active {
+   color: white;
 }
 .copyright {
   float: left;
@@ -261,7 +275,6 @@ a.last{
   font-size: 14px;
   color: #7494ca;
 }
-
 /*Calendar widget styles*/
 .calendar-widget {
   margin: 30px auto 0;
