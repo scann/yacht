@@ -1,27 +1,40 @@
 module.exports = function(grunt) {
     grunt.initConfig({
+        postcss: {
+            processors: [
+                require('pixrem')(), // add fallbacks for rem units
+                require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                require('cssnano')() // minify the result
+            ],
+            dist: {
+                src: 'assets/css/*.css'
+            }
+        },
         concat: {
             js: {
                 options: {
-                    separator: ';'
+                    stripBanners: 'block',
+                    separator: ';\n'
                 },
-                dist: {
-                    src: ['assets/js/calendar.js', 'assets/js/menu.js', 'assets/js/jquery.fancybox.js', 'assets/js/jquery.fancybox-buttons.js'],
-                    dest: 'assets/js/build.js'
-                }
+                 src: ['assets/js/jquery.fancybox.js',
+                       'assets/js/jquery.fancybox-buttons.js',
+                       'assets/js/fancybox.js',
+                       'assets/js/calendar.js',
+                       'assets/js/menu.js'],
+                 dest: 'assets/js/build.js'
             },
             css: {
                 src: [ 'assets/css/*.css' ],
-                dest: 'assets/css/styles.css'
+                dest: 'assets/cssmin/style.css'
             }
         },
         cssmin: {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'assets/css',
-                    src: ['styles.css'],
-                    dest: 'assets/css/',
+                    cwd: 'assets/cssmin',
+                    src: ['style.css'],
+                    dest: 'assets/cssmin/',
                     ext: '.min.css'
                 }]
             }
@@ -35,7 +48,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'assets/img',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'assets/img/'
+                    dest: 'assets/imgmin/'
                 }]
             }
         },
@@ -45,16 +58,17 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    'assets/js/build.min.js': ['assets/js/build.js']
+                    'assets/jsmin/build.min.js': ['assets/js/build.js']
                 }
             }
         }
 
     });
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['concat', 'cssmin', 'imagemin', 'uglify']);
+    grunt.registerTask('default', ['postcss','concat', 'cssmin', 'imagemin', 'uglify']);
 };

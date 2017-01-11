@@ -61,7 +61,7 @@ header {
 }
 .block-right ul {
   float: right;
-  list-style-image:url("../img/icon-phone.png");
+  list-style-image:url("../imgmin/icon-phone.png");
 }
 
 .header-container:after, .footer-wrapper:after{
