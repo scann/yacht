@@ -1,0 +1,32 @@
+{
+  "name": "yacht",
+  "version": "1.0.0",
+  "description": "simple card site",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scann/yacht.git"
+  },
+  "keywords": [
+    "cardsite",
+    "yachts",
+    "seawalk"
+  ],
+  "author": "scann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scann/yacht/issues"
+  },
+  "homepage": "https://github.com/scann/yacht#readme"
+}
