@@ -1061,7 +1061,7 @@ a.last{
 }
 .footer-menu a.active,
 .footer-menu a:active {
-   color: white;
+   color: #ffffff;
 }
 .copyright {
   float: left;
@@ -1071,7 +1071,7 @@ a.last{
   font-size: 14px;
   color: #7494ca;
 }
-/*Calendar widget styles*/
+
 .calendar-widget {
   margin: 30px auto 0;
 }

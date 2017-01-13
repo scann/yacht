@@ -61,14 +61,37 @@ module.exports = function(grunt) {
                     'assets/jsmin/build.min.js': ['assets/js/build.js']
                 }
             }
+        },
+        watch: {
+            css: {
+                files: [ 'assets/css/*.css' ],
+                tasks: ['postcss', 'concat:css', 'cssmin'],
+                options: {
+                    livereload: true
+                }
+            },
+            js: {
+                files: ['assets/js/*.js'],
+                tasks: ['concat:js', 'uglify'],
+                options: {
+                    livereload: true
+                }
+            },
+            img: {
+                files: ['assets/img/*.*'],
+                tasks: ['imagemin'],
+                options: {
+                    livereload: true
+                }
+            }
         }
-
     });
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['postcss','concat', 'cssmin', 'imagemin', 'uglify']);
+    grunt.registerTask('default', ['watch']);
 };
